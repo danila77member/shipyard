@@ -11,7 +11,7 @@ contract Deploy is Script {
     function run() public {
         uint256 deployerPrivateKey = vm.envUint("MY_ACTUAL_PK_BE_CAREFUL");
         vm.startBroadcast(deployerPrivateKey);
-        new ExampleNFT('Example', 'EXNFT');
+        new ExampleNFT("Example", "EXNFT");
         vm.stopBroadcast();
     }
 }
